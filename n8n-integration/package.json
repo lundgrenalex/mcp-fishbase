@@ -1,0 +1,47 @@
+{
+  "name": "n8n-nodes-fishbase",
+  "version": "1.0.0",
+  "description": "n8n node for FishBase data access via MCP",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "files": [
+    "dist",
+    "credentials",
+    "nodes"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/FishBaseApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/FishBase/FishBase.node.js"
+    ]
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "fishbase",
+    "marine-biology",
+    "fish-data"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.8.0",
+    "n8n-workflow": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "author": "",
+  "license": "MIT"
+}
