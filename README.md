@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides access to FishBase marine biology data, with n8n integration.
 
+<a href="https://glama.ai/mcp/servers/@lundgrenalex/mcp-fishbase">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@lundgrenalex/mcp-fishbase/badge" alt="FishBase Server MCP server" />
+</a>
+
 ## Features
 
 - Access to FishBase species data
